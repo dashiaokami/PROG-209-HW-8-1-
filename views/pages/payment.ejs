@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="row">
+        <div class="col-sm-8">    
+            <div class="jumbotron">
+                <h1>Payment Page</h1>
+                <p>Here are your payment options</p>
+
+
+          <form action="/action_page.php">
+            <label for="pay">Please choose your payment method:</label>
+            <select name="pay" id="pay">
+              <option value="debit">Debit</option>
+              <option value="credit">Credit</option>
+              <option value="cash">Cash</option>
+            </select>
+            <br><br>
+          </form>
+            </div>
+        </div>
+    
+        <div class="col-sm-4">        
+            <div class="well">
+                <h3>Payment Instructions:</h3>
+                <p2>Here is the payment page. Depending on the options you chose, your total will appear below. You can chose cash, credit or debit. If you choose cash, please go to the front desk to pay before service.</p2>
+            </div>
+        </div>
+    
+    </div>
+    </main>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+    </body>
+    </html>

@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+    <div class="row">
+        <div class="col-sm-8">    
+            <div class="jumbotron">
+
+        <h1>Dry Settings</h1>
+        <p>Here you can customize your drying cycle</p>
+
+
+        <form action="/action_page.php">
+            <label for="time">Choose your timer:</label>
+            <select name="time" id="time">
+              <option value="15">15 Minutes</option>
+              <option value="30">30 Minutes</option>
+              <option value="45">45 Minutes</option>
+              <option value="60">60 minutes</option>
+            </select>
+            <br><br>
+          </form>
+
+
+          <form action="/action_page.php">
+            <label for="temp">Choose your temperature:</label>
+            <select name="temp" id="temp">
+              <option value="cool">Cool Air</option>
+              <option value="warm">Warm Air</option>
+              <option value="hot">Hot Air</option>
+            </select>
+            <br><br>
+          </form>
+
+          <form action="/action_page.php">
+            <label for="iron">Would you like your clothes to be ironed?:</label>
+            <select name="iron" id="iron">
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+            <br><br>
+          </form>
+
+          <input type="submit" value="Submit">
+
+
+    </div>
+</div>
+
+<div class="col-sm-4">        
+    <div class="well">
+        <h3>Washing Instructions:</h3>
+        <p2>On this drying page, you will select how long you would like your clothes to be in the dryer, then select the temperature you want to dry with. You can also decide if you would like your clothes to be ironed or not. Once your are finished, you will be redirected to the payment page.</p2>
+    </div>
+</div>
+
+
+<footer>
+    <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+<main>
+
+  <div class="row">
+    <div class="col-sm-8">
+  <div class="jumbotron">
+      <h1>Welcome to the Luandromat!</h1>
+      <p>On this Page, you will find info about the business, as well as instructions on how to start your order. Please enter your info:</p><br>
+
+      <p1>Name: <input type="text" name="name" id='name'></p1><br><br>
+
+      <p2>Number: <input type="text" name="number" id='number'></p2><br><br>
+
+    <p3>Address: <input type="text" name="address" id='address'></p3><br><br>
+    <button onclick="add()">Add</button>
+  </div>
+    </div>
+
+
+  <div class="col-sm-4">        
+    <div class="well">
+        <h3>About Us</h3>
+        <p4>Instructions: Please fill out you information to the left. Once you're finished you will redirected to the washing page. There you will chose your settings and once you're done, you will then be redirected to the drying page.</p4>
+    </div>
+</div>
+
+<div class="col-sm-4">        
+  <div class="well">
+    <h4>Prices coming soon</h4>
+  </div>
+</div>
+
+</main>
+</body>
+<footer>
+  <% include ../partials/footer %>
+</footer>
+
+</body>
+</html>

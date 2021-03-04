@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<header>
+    <% include ../partials/header %>
+</header>
+
+<main>
+    <div class="row">
+        <div class="col-sm-8">    
+            <div class="jumbotron">
+                <h1>Wash settings</h1>
+                <p>Here you can customize your wash cycle</p>
+
+                <form action="/action_page.php">
+                    <label for="load">Choose a load size:</label>
+                    <select name="load" id="load">
+                      <option value="small">Small</option>
+                      <option value="medium">Medium</option>
+                      <option value="large">Large</option>
+                    </select>
+                    <br><br>
+                  </form>
+
+              <form action="/action_page.php">
+                  <label for="temp">Choose a temperature:</label>
+                  <select name="temp" id="temp">
+                    <option value="cold">Cold</option>
+                    <option value="warm">Warm</option>
+                    <option value="hot">Hot</option>
+                 </select>
+                    <br><br>
+                  </form>
+
+                  <form action="/action_page.php">
+                    <label for="colors">Choose your color:</label>
+                    <select name="colors" id="colors">
+                      <option value="Darks">Darks</option>
+                      <option value="Whites">Whites</option>
+                      <option value="Colors">Colors</option>
+                    </select>
+                    <br><br>
+                  </form>
+
+                  <form action="/action_page.php">
+                    <label for="detergent">Choose a Detergent:</label>
+                    <select name="detergent" id="detergent">
+                      <option value="tide">Tide</option>
+                      <option value="oxi clean">Oxi Clean</option>
+                      <option value="gain">Gain</option>
+                      <option value="ecos">Ecos</option>
+                    </select>
+                    <br><br>
+                  </form>
+                  <input type="submit" value="Submit">
+
+            </div>
+        </div>
+    
+        <div class="col-sm-4">        
+            <div class="well">
+                <h3>Washing Instructions:</h3>
+                <p2>On this washing page, you will choose what size load of clothing you have, the tempurature you would like them to be washed at, and what colors they are. You can also choose which detergent you want to use from the choices we have.</p2>
+            </div>
+        </div>
+    
+    </div>
+    </main>
+    <footer>
+        <% include ../partials/footer %>
+    </footer>
+    
+    </body>
+    </html>
