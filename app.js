@@ -38,20 +38,6 @@ app.get('/payment', function(req, res) {
 });
 
 
-// upLoadData page 
-// sending a get with 1 param
-// http://localhost:3000/uploadData?id=2
-app.get('/uploadData', function(req, res) {
-    let idVar = req.param('id');
-    let msgVar = req.param('msg');
-    // passing an object, used like a dictionary, to the render code
-    res.render('pages/uploadData', { 
-        value1PassedToRenderPage: idVar,
-        value2PassedToRenderPage: msgVar
-     });
-  });
-
-
 
 
 app.listen(3000);  // not setting port number in www.bin, simple to do here
